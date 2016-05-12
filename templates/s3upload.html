@@ -1,0 +1,13 @@
+
+    <form (ngSubmit)="upload()">
+    	<div style="width: 100px; height: 100px; border: 1px solid black" id="s3Upload" S3Upload [s3Upload]="s3Upload"></div>
+        <input name="file" type="file" size="60" (change)="onChange($event)" multiple>
+        <input type="submit" value="Upload"/>
+    </form>
+    <div id="repeater">
+	    <div *ngFor="#file of s3Upload.managedUploads; #i=index">
+	    	UPLOADING:	{{file.status}} * {{file.progress}} * {{file.total}}
+	    	<div (click)="pauseUpload(i)"> x </div>
+	    	<div (click)="removeUpload(i)"> x </div>
+	    </div>
+	</div>

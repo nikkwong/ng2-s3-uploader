@@ -1,0 +1,29 @@
+{
+  "name": "ng2-s3-upload",
+  "version": "0.0.1",
+  "description": "AWS S3 Uploader for Angular2 using Browser Based POST (Sig Version 4)",
+  "main": "index.js",
+  "keywords": [
+    "angular2",
+    "ng2",
+    "fileupload",
+    "s3",
+    "aws",
+    "file",
+    "upload",
+    "s3",
+    "POST",
+    "browser",
+    "component"
+  ],
+  "author": "Nikk Wong",
+  "license": "MIT",
+  "dependencies": {
+    "angular2": "^2.0.0-beta.17",
+    "es6-shim": "^0.35.0",
+    "reflect-metadata": "^0.1.2",
+    "rxjs": "^5.0.0-beta.6",
+    "underscore": "^1.8.3",
+    "zone.js": "^0.6.12"
+  }
+}
